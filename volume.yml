@@ -1,6 +1,4 @@
 - hosts: localhost
-  collections:
-    - netapp.ontap
   name: ONTAP
   gather_facts: false
   vars:
@@ -15,7 +13,7 @@
     state: present
   tasks:
   - name: "{{ tower_job_template_name }}"
-    na_ontap_volume:
+    netapp.ontap.na_ontap_volume:
       state: "{{ state }}"
       name: "{{ volname }}"
       aggregate_name: "{{ aggrname }}"
