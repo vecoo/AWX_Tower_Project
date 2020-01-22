@@ -5,6 +5,7 @@
     hostname: "172.32.0.152"
     volname: ansibleVolume
     vserver: ansible_vserver
+    aggrname:
     size: 10
     aggr: aggr1
     e_policy: 
